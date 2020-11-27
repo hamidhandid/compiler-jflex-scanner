@@ -1,5 +1,5 @@
 # Seyyed & Yazdi Jflex Scanner
-A scanner with jflex for compiler course in Fall 2020.
+A scanner with jflex for compiler course in Fall 2020 at Shahid Beheshti university.
 
 ## How To Run
 
