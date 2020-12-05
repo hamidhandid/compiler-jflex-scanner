@@ -1,10 +1,17 @@
 int main(){
-	// Comment Test
+	// End of lineComment Test
+
     /*
     Long
     Comment
     Test
     */
+
+    // Identifier Test
+    variable1;
+    bool boolVal;
+    int _a_ = 1234; // Not Correct Identifier
+    $$%*@!__%%variable^^#@ /* Not Correct Identifier */
 
     // Assignment Test
     a = b;
@@ -13,9 +20,9 @@ int main(){
     num++
     num += 1;
     num /= 2;
-
-
-    bool bool1 = (2 && 4) || (2 == 4) || 2!=4 || 2<=4 || 2>=4 || 2<4 && 2 > 4 || (2||4);
+    num -= num2;
+    num *= num2;
+    bool bool1 = (1 && 4) || (1 == 2) || 1!=2 || 1<=2 || 1>=2 || 1<2 && 1 > 2 || (1||2);
 
     int a, b; // Comma Test
 
@@ -25,47 +32,39 @@ int main(){
     double sn2 = -4.5E1;
     double sn3 = +6343e-3;
 
-    /* double Test
-            */
+    /* double Test */
     -10.;
     -0.21;
     -10.02;
     10.02;
-    double notDoubleNumber = .12; // It is not Double
+    double notDoubleNumber = .12; // this is not Double
 
     // hex Test
     -0x12A;
     +0X12A;
 
-    // Identifier Test
-    bool boolVal;
-    int _a_ = 1234; // Not Correct Identifier
-
-
     // // String Test / */
     string s1 = "Man ";
-    string s2 = "Man be\tto\nhich kari nadaram\n";
+    string s2 = "Print\tsalam\nbe to javane irani\n";
     string s3 = " Test Of \' single quote \' ";
     "Test Of \" double quote \"";
-    "hellllloooo\n\t\'\""
+    "hellllloooo\n\t\'\"" // Combination of special characters and other characters
+
     // /* IF Test */
-    if (s1 == d2 )
-        2;
-    else 
-        int 3 = 4; // Not Correct
-    
+    if (cond1 == cond2 )
+        return 0;
+    else
+        int 3 = 4; // Not Correct Logically
 
-        for(int i =0; i < 10; i++){ // for
-          while ( "s" in "google" )
-                return void;
-                return 0;
-        }
+    // for and while Test
+    for(int i =0; i < 10; i++){
+      while ( str != "exit" )
+            i++;
+      break;
     }
-    void
 
-    []
-
-    REadLine
+    // Some Keywords
+    REadLine // Not correct keyword
     ReadLine
     NewArray[2, 3]
     break;
@@ -73,6 +72,5 @@ int main(){
     false
     true
     continue
-
-
+    void
 }
