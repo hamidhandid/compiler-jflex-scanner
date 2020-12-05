@@ -18,15 +18,15 @@ public class Main {
             if (scanner.yyatEOF()) {
                 break;
             }
-            final Type type = symbol.getType();
-            if (type == Type.BOOLEAN || type == Type.INTEGER_NUMBER || type == Type.REAL_NUMBER || type == Type.HEX || type == Type.SCIENTIFIC_NOTATION || type == Type.STRING || type == Type.SPECIAL_CHAR) {
-                System.out.println(type);
-                System.out.println("int: " + scanner.intValue);
-                System.out.println("double: " + scanner.doubleValue);
-                System.out.println("boolean: " + scanner.booleanValue);
-                System.out.println("string: " + scanner.string);
-                System.out.println();
-            }
+//            final Type type = symbol.getType();
+//            if (type == Type.BOOLEAN || type == Type.INTEGER_NUMBER || type == Type.REAL_NUMBER || type == Type.HEX || type == Type.SCIENTIFIC_NOTATION || type == Type.STRING || type == Type.SPECIAL_CHAR) {
+//                System.out.println(type);
+//                System.out.println("int: " + scanner.intValue);
+//                System.out.println("double: " + scanner.doubleValue);
+//                System.out.println("boolean: " + scanner.booleanValue);
+//                System.out.println("string: " + scanner.string);
+//                System.out.println();
+//            }
 //            System.out.println(symbol.getToken());
             highlighter.addHtmlText(symbol.getToken(), symbol.getType());
         }
