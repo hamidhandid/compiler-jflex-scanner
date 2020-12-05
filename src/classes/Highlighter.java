@@ -59,11 +59,11 @@ public class Highlighter {
                 font += "normal";
                 break;
             case HEX:
-            case SCIENTIFIC_NOTATION:
             case INTEGER_NUMBER:
                 color += "orange";
                 font += "normal";
                 break;
+            case SCIENTIFIC_NOTATION:
             case REAL_NUMBER:
                 color += "orange";
                 font = "font-style:italic";
