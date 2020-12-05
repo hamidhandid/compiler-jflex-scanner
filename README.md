@@ -8,7 +8,7 @@ $ . ./app.sh
 $ app run
 ```
 
-input file is code.txt in files folder. output syntax highlighter file is highlighter.html in files folder.
+input file is code.txt in files folder in src. output syntax highlighter file is highlighter.html in files folder in src.
 
 ## How To Delete Generate Files
 
