@@ -72,7 +72,7 @@ public class Highlighter {
                 color += "green";
                 font += "normal";
                 break;
-            case SPECIAL_CHAR:
+            case ESCAPE_CHAR:
                 color += "green";
                 font = "font-style:italic";
                 break;

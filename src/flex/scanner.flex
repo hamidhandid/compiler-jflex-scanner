@@ -1,5 +1,4 @@
 package classes;
-import java.util.*;
 
 %%
 
@@ -182,12 +181,12 @@ StringLiteral = \"
                         return symbol(yytext(), Type.STRING);
                     }
     [^\r\n\t\"\'\\]+  {string.append(yytext()); return symbol(yytext(), Type.STRING);}
-    "\\r"   {string.append("\r"); return symbol(yytext(), Type.SPECIAL_CHAR);}
-    "\\n"    {string.append("\n"); return symbol(yytext(), Type.SPECIAL_CHAR);}
-    "\\t"    {string.append("\t"); return symbol(yytext(), Type.SPECIAL_CHAR);}
-    "\\\'"  {string.append("'"); return symbol(yytext(), Type.SPECIAL_CHAR);}
-    "\\\""  {string.append("\""); return symbol(yytext(), Type.SPECIAL_CHAR);}
-    "\\\\"    {string.append("\\"); return symbol(yytext(), Type.SPECIAL_CHAR);}
+    "\\r"   {string.append("\r"); return symbol(yytext(), Type.ESCAPE_CHAR);}
+    "\\n"    {string.append("\n"); return symbol(yytext(), Type.ESCAPE_CHAR);}
+    "\\t"    {string.append("\t"); return symbol(yytext(), Type.ESCAPE_CHAR);}
+    "\\\'"  {string.append("'"); return symbol(yytext(), Type.ESCAPE_CHAR);}
+    "\\\""  {string.append("\""); return symbol(yytext(), Type.ESCAPE_CHAR);}
+    "\\\\"    {string.append("\\"); return symbol(yytext(), Type.ESCAPE_CHAR);}
 }
 
 [^] {

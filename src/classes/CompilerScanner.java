@@ -3,7 +3,6 @@
 // source: flex/scanner.flex
 
 package classes;
-import java.util.*;
 
 
 // See https://github.com/jflex-de/jflex/issues/222
@@ -889,32 +888,32 @@ public class CompilerScanner {
             // fall through
           case 31: break;
           case 12:
-            { string.append("\""); return symbol(yytext(), Type.SPECIAL_CHAR);
+            { string.append("\""); return symbol(yytext(), Type.ESCAPE_CHAR);
             }
             // fall through
           case 32: break;
           case 13:
-            { string.append("'"); return symbol(yytext(), Type.SPECIAL_CHAR);
+            { string.append("'"); return symbol(yytext(), Type.ESCAPE_CHAR);
             }
             // fall through
           case 33: break;
           case 14:
-            { string.append("\\"); return symbol(yytext(), Type.SPECIAL_CHAR);
+            { string.append("\\"); return symbol(yytext(), Type.ESCAPE_CHAR);
             }
             // fall through
           case 34: break;
           case 15:
-            { string.append("\n"); return symbol(yytext(), Type.SPECIAL_CHAR);
+            { string.append("\n"); return symbol(yytext(), Type.ESCAPE_CHAR);
             }
             // fall through
           case 35: break;
           case 16:
-            { string.append("\r"); return symbol(yytext(), Type.SPECIAL_CHAR);
+            { string.append("\r"); return symbol(yytext(), Type.ESCAPE_CHAR);
             }
             // fall through
           case 36: break;
           case 17:
-            { string.append("\t"); return symbol(yytext(), Type.SPECIAL_CHAR);
+            { string.append("\t"); return symbol(yytext(), Type.ESCAPE_CHAR);
             }
             // fall through
           case 37: break;

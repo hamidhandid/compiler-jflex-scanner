@@ -19,7 +19,7 @@ public class Main {
                 break;
             }
 //            final Type type = symbol.getType();
-//            if (type == Type.BOOLEAN || type == Type.INTEGER_NUMBER || type == Type.REAL_NUMBER || type == Type.HEX || type == Type.SCIENTIFIC_NOTATION || type == Type.STRING || type == Type.SPECIAL_CHAR) {
+//            if (type == Type.BOOLEAN || type == Type.INTEGER_NUMBER || type == Type.REAL_NUMBER || type == Type.HEX || type == Type.SCIENTIFIC_NOTATION || type == Type.STRING || type == Type.ESCAPE_CHAR) {
 //                System.out.println(type);
 //                System.out.println("int: " + scanner.intValue);
 //                System.out.println("double: " + scanner.doubleValue);
