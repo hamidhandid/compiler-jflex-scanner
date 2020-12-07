@@ -13,7 +13,7 @@ public class Highlighter {
 
     public Highlighter() {
         String html = "<html><head><title>Highlighter</title></head>"
-                + "<body style=\"background-color:#8a8a8a\">"
+                + "<body style=\"background-color:#808080;font-family:monospace;\">"
                 + "<div id='tokens'> <p>" + "<span style=" + "\"color:lightgrey\">" + line + "</span>" + "&nbsp;" + "</p>"
                 + "</body></html>";
         document = Jsoup.parse(html);
