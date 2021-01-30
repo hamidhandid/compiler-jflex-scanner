@@ -72,7 +72,8 @@ ReadLine = "ReadLine"
 Continue = "continue"
 False = "false"
 True = "true"
-ReservedKeyword = {Void} | {Int} | {Double} | {Bool} | {String} | {Record} | {For} | {While} | {If} | {Else} | {Return} | {Break} | {New} | {NewArray} | {Print} | {ReadInteger} | {ReadLine} | {Continue} | {False} | {True}
+Function = "function"
+ReservedKeyword = {Function} | {Void} | {Int} | {Double} | {Bool} | {String} | {Record} | {For} | {While} | {If} | {Else} | {Return} | {Break} | {New} | {NewArray} | {Print} | {ReadInteger} | {ReadLine} | {Continue} | {False} | {True}
 
 // Operators and Punctuations
 Add = "+"
