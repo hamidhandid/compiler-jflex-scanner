@@ -12,9 +12,11 @@ app() {
 _run() {
   cd src
   java -jar ../lib/jflex-full-1.8.2.jar -d ./classes/ flex/scanner.flex
+  mkdir -p bin
   cd bin
-  javac -cp "..;../../lib/jsoup-1.13.1.jar" -d ./ ../Main.java
-  java -cp ".;../../lib/jsoup-1.13.1.jar" Main ../files/ code.txt
+  # Change : to ; in two following lines if you use windows
+  javac -cp "..:../../lib/jsoup-1.13.1.jar" -d ./ ../Main.java
+  java -cp ".:../../lib/jsoup-1.13.1.jar" Main ../files/ code.txt
   cd ..
   cd ..
 }
